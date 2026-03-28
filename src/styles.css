@@ -158,6 +158,37 @@ section {
   top: 1rem;
   right: 1rem;
   z-index: 1000;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.lang-hint {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  font-family: var(--font-script);
+  font-size: 1.6rem;
+  color: var(--gold-secondary);
+  animation: bounceRight 2s infinite ease-in-out;
+  text-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
+}
+
+.lang-hint .arrow {
+  display: inline-block;
+  transform: translateY(0px);
+  font-family: var(--font-sans); /* Use standard font for the arrow so it doesn't look weird */
+}
+
+@keyframes bounceRight {
+  0%, 100% { transform: translateX(0); }
+  50% { transform: translateX(5px); }
+}
+
+@media (max-width: 600px) {
+  .lang-hint {
+    font-size: 1.2rem;
+  }
 }
 
 .lang-toggle-container .btn-gold {

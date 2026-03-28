@@ -1,4 +1,8 @@
 <div class="lang-toggle-container">
+  <div class="lang-hint" *ngIf="lang.currentLang() === 'en'">
+    <span class="hint-text">Click here to see in Bengali</span>
+    <span class="arrow">→</span>
+  </div>
   <button class="btn-gold" (click)="lang.toggleLanguage()">{{ lang.t().toggleBtn }}</button>
 </div>
 

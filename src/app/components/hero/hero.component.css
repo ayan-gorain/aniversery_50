@@ -37,6 +37,7 @@
 .hero-content {
   z-index: 1;
   max-width: 800px;
+  margin-top: 4rem;
 }
 
 .years-badge {

@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
 import { LanguageService } from './services/language.service';
 import { HeroComponent } from './components/hero/hero.component';
@@ -9,7 +10,7 @@ import { InvitationComponent } from './components/invitation/invitation.componen
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, HeroComponent, StoryComponent, GalleryComponent, InvitationComponent],
+  imports: [CommonModule, RouterOutlet, HeroComponent, StoryComponent, GalleryComponent, InvitationComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
