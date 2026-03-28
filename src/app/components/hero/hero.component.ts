@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { CountdownComponent } from '../countdown/countdown.component';
+import { LanguageService } from '../../services/language.service';
 
 @Component({
   selector: 'app-hero',
@@ -8,5 +9,5 @@ import { CountdownComponent } from '../countdown/countdown.component';
   styleUrl: './hero.component.css'
 })
 export class HeroComponent {
-
+  constructor(public lang: LanguageService) {}
 }

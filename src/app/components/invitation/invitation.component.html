@@ -1,32 +1,30 @@
 <section id="invitation" class="invitation-section">
   <div class="invitation-card glass-panel">
     <div class="card-inner">
-      <h2>You are joyfully invited</h2>
-      <p class="subtitle">to celebrate the Golden Anniversary of</p>
+      <h2>{{ lang.t().inviteTitle }}</h2>
+      <p class="subtitle">{{ lang.t().inviteSub }}</p>
       
-      <h3 class="names-script">Grandpa & Grandma</h3>
+      <h3 class="names-script">{{ lang.t().inviteNames }}</h3>
       
       <div class="details">
         <div class="detail-item">
           <span class="icon">📅</span>
-          <p>{{ eventDate }}</p>
+          <p>{{ lang.t().date }}</p>
         </div>
         <div class="detail-item">
           <span class="icon">⏰</span>
-          <p>{{ eventTime }}</p>
+          <p>{{ lang.t().time }}</p>
         </div>
         <div class="detail-item">
           <span class="icon">📍</span>
           <p>
-            <strong>{{ eventLocation }}</strong><br>
-            {{ eventAddress }}
+            <strong>{{ lang.t().venue }}</strong><br>
+            {{ lang.t().address }}
           </p>
         </div>
       </div>
       
-      <div style="margin-top: 3rem;">
-        <button class="btn-gold">RSVP Now</button>
-      </div>
+      
     </div>
   </div>
 </section>

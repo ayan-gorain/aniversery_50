@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { LanguageService } from './services/language.service';
 import { HeroComponent } from './components/hero/hero.component';
 import { StoryComponent } from './components/story/story.component';
 import { GalleryComponent } from './components/gallery/gallery.component';
@@ -13,5 +14,5 @@ import { InvitationComponent } from './components/invitation/invitation.componen
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'Celebrating 50 Years';
+  constructor(public lang: LanguageService) {}
 }

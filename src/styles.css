@@ -152,3 +152,28 @@ section {
   color: var(--bg-dark);
   box-shadow: 0 0 20px rgba(212, 175, 55, 0.4);
 }
+
+.lang-toggle-container {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  z-index: 1000;
+}
+
+.lang-toggle-container .btn-gold {
+  padding: 0.5rem 1rem;
+  font-size: 0.95rem;
+  backdrop-filter: blur(5px);
+  background: rgba(15, 17, 21, 0.8);
+}
+
+.lang-toggle-container .btn-gold:hover,
+.lang-toggle-container .btn-gold:active {
+  background: var(--gold-primary);
+  color: var(--bg-dark);
+}
+
+body.lang-bn, body.lang-bn * {
+  font-family: 'Hind Siliguri', sans-serif !important;
+  letter-spacing: normal !important;
+}

@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { LanguageService } from '../../services/language.service';
 
 @Component({
   selector: 'app-invitation',
@@ -8,8 +9,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./invitation.component.css']
 })
 export class InvitationComponent {
-  eventDate = 'Thursday, April 16th, 2026';
-  eventTime = '5:00 PM onwards';
-  eventLocation = 'The Golden Manor';
-  eventAddress = '123 Anniversary Lane, Love City, NY 10001';
+  constructor(public lang: LanguageService) {}
 }

@@ -1,6 +1,6 @@
 <section id="gallery" class="gallery-section">
-  <h2>A Tale of 2 Stories</h2>
-  <p class="subtitle">Before their journey...</p>
+  <h2>{{ lang.t().galleryTitle }}</h2>
+  <p class="subtitle">{{ lang.t().gallerySub }}</p>
 
   <div class="gallery-grid">
     <div class="gallery-item story-card" *ngFor="let photo of photos" [ngClass]="photo.colSpan">

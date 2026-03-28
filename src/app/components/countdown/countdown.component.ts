@@ -1,4 +1,5 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
+import { LanguageService } from '../../services/language.service';
 
 @Component({
   selector: 'app-countdown',
@@ -8,6 +9,8 @@ import { Component, OnInit, OnDestroy } from '@angular/core';
   styleUrls: ['./countdown.component.css']
 })
 export class CountdownComponent implements OnInit, OnDestroy {
+  constructor(public lang: LanguageService) {}
+
   // Set the 50th Anniversary Date Here!
   anniversaryDate: Date = new Date('2026-04-16T00:00:00');
   

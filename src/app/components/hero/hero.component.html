@@ -3,12 +3,12 @@
   <div class="hero-particles"></div>
   
   <div class="hero-content flex-center" style="flex-direction: column;">
-    <span class="years-badge">50 Golden Years</span>
+    <span class="years-badge">{{ lang.t().heroBadge }}</span>
     
-    <h1>Celebrating a Lifetime of Love</h1>
+    <h1>{{ lang.t().heroTitle }}</h1>
     
     <div class="names">
-      <h2>Grandpa <span class="and">&</span> Grandma</h2>
+      <h2>{{ lang.t().heroNamesMap.p1 }} <span class="and">{{ lang.t().heroNamesMap.and }}</span> {{ lang.t().heroNamesMap.p2 }}</h2>
     </div>
     
     <app-countdown></app-countdown>
