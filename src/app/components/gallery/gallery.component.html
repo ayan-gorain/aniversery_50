@@ -1,0 +1,15 @@
+<section id="gallery" class="gallery-section">
+  <h2>A Tale of 2 Stories</h2>
+  <p class="subtitle">Before their journey...</p>
+
+  <div class="gallery-grid">
+    <div class="gallery-item story-card" *ngFor="let photo of photos" [ngClass]="photo.colSpan">
+      <div class="image-wrapper">
+        <img [src]="photo.url" [alt]="photo.caption">
+      </div>
+      <div class="story-caption">
+        <p class="script-text title-hover">{{ photo.caption }}</p>
+      </div>
+    </div>
+  </div>
+</section>

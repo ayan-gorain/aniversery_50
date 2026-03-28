@@ -1,0 +1,33 @@
+<section id="countdown" class="countdown-section">
+  <div class="glass-panel countdown-container">
+    <h2>The Golden Day Approaches</h2>
+    
+    <div class="timer">
+      <div class="time-box">
+        <span class="number">{{ days < 10 && days >= 0 ? '0' + days : days }}</span>
+        <span class="label">Days</span>
+      </div>
+      <div class="separator">:</div>
+      <div class="time-box">
+        <span class="number">{{ hours < 10 ? '0' + hours : hours }}</span>
+        <span class="label">Hours</span>
+      </div>
+      <div class="separator">:</div>
+      <div class="time-box">
+        <span class="number">{{ minutes < 10 ? '0' + minutes : minutes }}</span>
+        <span class="label">Minutes</span>
+      </div>
+      <div class="separator">:</div>
+      <div class="time-box">
+        <span class="number">{{ seconds < 10 ? '0' + seconds : seconds }}</span>
+        <span class="label">Seconds</span>
+      </div>
+    </div>
+    
+    <div class="dancing-couple">
+      <span class="dancer female">💃</span>
+      <span class="dancer male">🕺</span>
+    </div>
+    
+  </div>
+</section>

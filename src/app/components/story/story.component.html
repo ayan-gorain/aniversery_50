@@ -1,0 +1,15 @@
+<section id="story" class="story-section">
+  <h2>Their Journey</h2>
+  <p class="subtitle">A true testament to love, patience, and unwavering support through five beautiful decades.</p>
+
+  <div class="timeline">
+    <div class="timeline-item" *ngFor="let item of timeline; let i = index" [class.reverse]="i % 2 !== 0">
+      <div class="timeline-content glass-panel">
+        <h3 class="year">{{ item.year }}</h3>
+        <h4>{{ item.title }}</h4>
+        <p>{{ item.description }}</p>
+      </div>
+      <div class="timeline-dot"></div>
+    </div>
+  </div>
+</section>
