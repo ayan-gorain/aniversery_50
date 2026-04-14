@@ -10,7 +10,7 @@ import { InvitationComponent } from './components/invitation/invitation.componen
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, RouterOutlet, HeroComponent, StoryComponent, GalleryComponent, InvitationComponent],
+  imports: [CommonModule, RouterOutlet, HeroComponent, StoryComponent, InvitationComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
