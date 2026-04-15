@@ -12,7 +12,7 @@ export class CountdownComponent implements OnInit, OnDestroy {
   constructor(public lang: LanguageService) {}
 
   // Set the 50th Anniversary Date Here!
-  anniversaryDate: Date = new Date('2026-04-16T00:00:00');
+  anniversaryDate: Date = new Date('2026-04-17T17:00:00');
   
   days: number = 0;
   hours: number = 0;
